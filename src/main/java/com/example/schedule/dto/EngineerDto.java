@@ -13,8 +13,4 @@ public class EngineerDto extends ObjectDto {
     private Long id;
     private String firstName;
 
-    public enum DayTime {
-        MORNING,
-        AFTERNOON
-    }
 }
