@@ -5,8 +5,6 @@ Rest API to assign random engineers to the shifts within a period based on the g
  - Localhost
  http://localhost:8080/api/wheel
 
- - Web
-
  # Techs
  
  - Java 8
