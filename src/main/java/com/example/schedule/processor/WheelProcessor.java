@@ -50,18 +50,6 @@ public class WheelProcessor {
 
     private void removeUnavailableEngineers() {
 
-        System.out.println("before size "+engineerPool.size());
-
-
-        System.out.println(shifts.stream()
-                .filter(s -> s.getEngineer().getId() != null)
-                .map(s -> s.getEngineer())
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-                .entrySet().stream()
-                .filter(x -> x.getValue().intValue() == WheelConstants.MAX_ENGINEER_SHIFT_PER_PERIOD)
-                .map(Map.Entry::getKey)
-                .collect(Collectors.toList()));
-
         if (engineerPool.size() > 1) {
             engineerPool.removeAll(shifts.stream()
                     .filter(s -> s.getEngineer().getId() != null)
@@ -72,9 +60,6 @@ public class WheelProcessor {
                     .map(Map.Entry::getKey)
                     .collect(Collectors.toList()));
         }
-
-
-        System.out.println("after size "+engineerPool.size());
     }
 
 }
