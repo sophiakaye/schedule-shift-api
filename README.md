@@ -7,11 +7,13 @@ Rest API to assign random engineers to the shifts within a period based on the g
 
  - Web
 
+ # Techs
+ 
+ - Java 8
+ - Spring Boot
+ - Lombok
+ - Maven
 
- # DTOs
-
- - EngineerDto
- - ShiftDto
 
  # Core Engine 
 
@@ -19,5 +21,18 @@ Rest API to assign random engineers to the shifts within a period based on the g
  - A random engineer is picked up from the pool and sent to the Rule Validator to verify his availability
  - If the availability is true, the engineer is assigned to the shift, if it's not another random engineer is picked up and the same process continue until an available engineer is found
  - After every assignment, we update the engineer pool to remove unvailable engineers.
+
+ # DTOs
+
+ - EngineerDto
+ - ShiftDto
+
+# Rule Components
+
+ - MaxShiftRule
+ - NotConsecutiveDayRule
+ - NotSameDayShiftRule
+
+
 
  
