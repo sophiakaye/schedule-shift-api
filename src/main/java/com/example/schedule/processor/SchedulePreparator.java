@@ -26,8 +26,8 @@ public class SchedulePreparator {
             if(DateHelper.checkIsWeekend(currentDate))
                 continue;
 
-            newShifts.add(new ShiftDto((long) tempId++, currentDate.getDayOfWeek().name(), currentDate, EngineerDto.DayTime.MORNING, new EngineerDto()));
-            newShifts.add(new ShiftDto((long) tempId++, currentDate.getDayOfWeek().name(), currentDate, EngineerDto.DayTime.AFTERNOON, new EngineerDto()));
+            newShifts.add(new ShiftDto((long) tempId++, currentDate.getDayOfWeek().name(), currentDate, ShiftDto.DayTime.MORNING, new EngineerDto()));
+            newShifts.add(new ShiftDto((long) tempId++, currentDate.getDayOfWeek().name(), currentDate, ShiftDto.DayTime.AFTERNOON, new EngineerDto()));
         }
         return newShifts;
     }
