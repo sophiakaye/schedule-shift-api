@@ -16,4 +16,9 @@ public class ShiftDto extends ObjectDto {
     private LocalDate shiftDate;
     private EngineerDto.DayTime dayTime;
     private EngineerDto engineer;
+    
+    public enum DayTime {
+        MORNING,
+        AFTERNOON
+    }
 }
