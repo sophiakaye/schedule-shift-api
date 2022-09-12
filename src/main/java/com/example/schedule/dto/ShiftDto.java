@@ -14,7 +14,7 @@ public class ShiftDto extends ObjectDto {
     private Long id;
     private String shiftDay;
     private LocalDate shiftDate;
-    private EngineerDto.DayTime dayTime;
+    private DayTime dayTime;
     private EngineerDto engineer;
     
     public enum DayTime {
