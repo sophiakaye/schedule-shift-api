@@ -1,4 +1,5 @@
-# schedule-shift-api
+# support-wheel-of-fate-java
+Issues
 Rest API to assign random engineers to the shifts within a period based on the given rules.
 
 # Endpoint 
